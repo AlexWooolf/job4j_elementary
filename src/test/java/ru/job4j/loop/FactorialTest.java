@@ -10,6 +10,7 @@ public class FactorialTest {
         int n = 5;
         int result = Factorial.calc(n);
         int expected = 120;
+        Assert.assertEquals(result, expected);
     }
 
     @Test
@@ -17,5 +18,6 @@ public class FactorialTest {
         int n = 0;
         int result = Factorial.calc(n);
         int expected = 1;
+        Assert.assertEquals(result, expected);
     }
 }
