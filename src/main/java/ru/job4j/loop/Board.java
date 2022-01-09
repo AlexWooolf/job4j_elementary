@@ -4,8 +4,6 @@ public class Board {
     public static void paint(int width, int height) {
         for (int row = 0; row < width; row++) {
             for (int cell = 0; cell < height; cell++) {
-                /* условие проверки, что писать пробел или X */
-                /* Выше в задании мы определили закономерность, когда нужно проста,влять X */
                 if ((row + cell) % 2 == 0) {
                     System.out.print("X");
                 } else {
