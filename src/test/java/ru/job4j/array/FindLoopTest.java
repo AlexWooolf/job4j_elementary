@@ -50,7 +50,7 @@ public class FindLoopTest {
         int expected = 3;
         Assert.assertEquals(expected, result);
     }
-    
+
     @Test
     public void whenArrayHasLength3Then2() {
         int[] data = new int[] {5, 10, 3};
