@@ -52,10 +52,12 @@ public class FindLoopTest {
     }
 
     @Test
-    public void whenArrayHasLength3Then2() {
-        int[] data = new int[] {5, 10, 3};
-        int el = 3;
-        int result = FindLoop.indexOf(data, el);
+    public void whenFind10() {
+        int[] data = new int[] {5, 2, 10, 3, 4};
+        int el = 10;
+        int start = 0;
+        int finish = 2;
+        int result = FindLoop.indexOf(data, el, start, finish);
         int expected = 2;
         Assert.assertEquals(expected, result);
     }
