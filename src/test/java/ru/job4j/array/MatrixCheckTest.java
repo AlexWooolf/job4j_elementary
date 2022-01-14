@@ -115,4 +115,17 @@ public class MatrixCheckTest {
         boolean result = MatrixCheck.isWin(input);
         Assert.assertFalse(result);
     }
+
+    @Test
+    public void whenDataNotMonoThenFalse2() {
+        char[][] input = {
+                {' ', ' ', 'X', ' ', ' '},
+                {' ', ' ', 'X', ' ', ' '},
+                {' ', 'X', ' ', ' ', ' '},
+                {' ', ' ', ' ', ' ', ' '},
+                {' ', ' ', 'X', ' ', ' '},
+        };
+        boolean result = MatrixCheck.isWin(input);
+        Assert.assertFalse(result);
+    }
 }
